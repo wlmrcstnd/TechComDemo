@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Apex Security Mode Demo — System vs User Mode">
+        <div class="slds-p-around_medium">
+            <lightning-button label="Run LEGACY query (58.0, system mode)" onclick={runLegacy}></lightning-button>
+            <lightning-button label="Run MODERN query (67.0, user mode)" onclick={runModern} class="slds-m-left_small"></lightning-button>
+
+            <template if:true={legacyResults}>
+                <h3 class="slds-m-top_medium">Legacy results:</h3>
+                <pre>{legacyResults}</pre>
+            </template>
+            <template if:true={modernResults}>
+                <h3 class="slds-m-top_medium">Modern results:</h3>
+                <pre>{modernResults}</pre>
+            </template>
+        </div>
+    </lightning-card>
+</template>

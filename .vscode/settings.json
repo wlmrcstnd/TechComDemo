@@ -1,0 +1,4 @@
+{
+    "xml.preferences.showSchemaDocumentationType": "none",
+    "java.project.resourceFilters": ["node_modules", ".git", "Untitled-1.java"]
+}

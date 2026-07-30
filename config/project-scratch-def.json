@@ -1,0 +1,10 @@
+{
+  "orgName": "Summer 26 Demo Org",
+  "edition": "Developer",
+  "features": ["EnableSetPasswordInApi"],
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true
+    }
+  }
+}

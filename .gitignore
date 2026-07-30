@@ -1,0 +1,12 @@
+.sfdx/
+.sf/
+.localdevserver/
+deploy-options.json
+.vscode/**
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+node_modules/
+.eslintcache
+*.log
+.DS_Store

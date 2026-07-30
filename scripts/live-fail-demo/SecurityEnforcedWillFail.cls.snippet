@@ -1,0 +1,26 @@
+// LIVE DEMO ONLY: copy this into a NEW .cls file inside
+// force-app/main/default/classes/ at API 67.0, save, and watch
+// VS Code's Problems panel flag the compile error immediately.
+// Then delete the file so your deployable source stays clean.
+
+
+public with sharing class SecurityEnforcedWillFail {
+    public static List<Account> getAccounts() {
+        return [
+            SELECT Id, Name
+            FROM Account
+            WITH SECURITY_ENFORCED
+        ];
+    }
+}
+
+// The fix to show right after:
+public with sharing class SecurityEnforcedFixed {
+    public static List<Account> getAccounts() {
+        return [
+            SELECT Id, Name
+            FROM Account
+            WITH USER_MODE
+        ];
+    }
+}
